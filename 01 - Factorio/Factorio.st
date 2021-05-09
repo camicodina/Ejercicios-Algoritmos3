@@ -1,13 +1,13 @@
-!classDefinition: #Caja category: 'Factorio-Escenario3'!
+!classDefinition: #Caja category: 'Factorio'!
 DenotativeObject subclass: #Caja
 	instanceVariableNames: ''
 	classVariableNames: ''
 	poolDictionaries: ''
-	category: 'Factorio-Escenario3'!
+	category: 'Factorio'!
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
-!classDefinition: 'Caja class' category: 'Factorio-Escenario3'!
+!classDefinition: 'Caja class' category: 'Factorio'!
 Caja class
 	instanceVariableNames: 'contenido'!
 
@@ -31,27 +31,27 @@ cantidadDeMenasDeCarbon
 cantidadDeMenasDeHierro
 	^contenido count: [:unaMena | unaMena = 'una mena de hierro' ].! !
 
-!Caja class methodsFor: 'as yet unclassified' stamp: 'vaciar 5/8/2021 21:09:05'!
+!Caja class methodsFor: 'as yet unclassified' stamp: 'cc 5/9/2021 17:59:17'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
-	contenido := ((OrderedCollection new) add: 'una mena de carbon'; add: 'una mena de hierro'; add: 'una mena de carbon'; add: 'una mena de hierro'; yourself).! !
+	contenido := ((OrderedCollection new) add: 'una mena de carbon'; yourself).! !
 
 !Caja class methodsFor: 'as yet unclassified' stamp: 'SF 4/20/2021 18:09:06'!
 vaciar
 	contenido := OrderedCollection new.! !
 
 
-!classDefinition: #CintaA category: 'Factorio-Escenario3'!
+!classDefinition: #CintaA category: 'Factorio'!
 DenotativeObject subclass: #CintaA
 	instanceVariableNames: ''
 	classVariableNames: ''
 	poolDictionaries: ''
-	category: 'Factorio-Escenario3'!
+	category: 'Factorio'!
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
-!classDefinition: 'CintaA class' category: 'Factorio-Escenario3'!
+!classDefinition: 'CintaA class' category: 'Factorio'!
 CintaA class
 	instanceVariableNames: 'contenido destino'!
 
@@ -75,7 +75,7 @@ cantidadDeMenasDeCarbon
 destino: aContenedor
 	destino := aContenedor.! !
 
-!CintaA class methodsFor: 'as yet unclassified' stamp: 'vaciar 5/8/2021 21:09:05'!
+!CintaA class methodsFor: 'as yet unclassified' stamp: 'cc 5/9/2021 17:59:17'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -95,16 +95,16 @@ vaciar
 	contenido := OrderedCollection new.! !
 
 
-!classDefinition: #CintaB category: 'Factorio-Escenario3'!
+!classDefinition: #CintaB category: 'Factorio'!
 DenotativeObject subclass: #CintaB
 	instanceVariableNames: ''
 	classVariableNames: ''
 	poolDictionaries: ''
-	category: 'Factorio-Escenario3'!
+	category: 'Factorio'!
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
-!classDefinition: 'CintaB class' category: 'Factorio-Escenario3'!
+!classDefinition: 'CintaB class' category: 'Factorio'!
 CintaB class
 	instanceVariableNames: 'contenido destino'!
 
@@ -128,7 +128,7 @@ cantidadDeMenasDeHierro
 destino: aContenedor
 	destino := aContenedor.! !
 
-!CintaB class methodsFor: 'as yet unclassified' stamp: 'vaciar 5/8/2021 21:09:05'!
+!CintaB class methodsFor: 'as yet unclassified' stamp: 'cc 5/9/2021 17:59:17'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -148,16 +148,16 @@ vaciar
 	contenido := OrderedCollection new.! !
 
 
-!classDefinition: #ExtractorDeCarbon category: 'Factorio-Escenario3'!
+!classDefinition: #ExtractorDeCarbon category: 'Factorio'!
 DenotativeObject subclass: #ExtractorDeCarbon
 	instanceVariableNames: ''
 	classVariableNames: ''
 	poolDictionaries: ''
-	category: 'Factorio-Escenario3'!
+	category: 'Factorio'!
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
-!classDefinition: 'ExtractorDeCarbon class' category: 'Factorio-Escenario3'!
+!classDefinition: 'ExtractorDeCarbon class' category: 'Factorio'!
 ExtractorDeCarbon class
 	instanceVariableNames: 'energiaActual destino'!
 
@@ -198,12 +198,12 @@ extraer
 	self sacarEnergia: energiaConsumida.
 	^destino agregarMenas: (self conjuntoDeMenasDeCarbonCantidad: cantidadDeMenas).! !
 
-!ExtractorDeCarbon class methodsFor: 'as yet unclassified' stamp: 'vaciar 5/8/2021 21:09:05'!
+!ExtractorDeCarbon class methodsFor: 'as yet unclassified' stamp: 'cc 5/9/2021 17:59:17'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
 	energiaActual := (SimpleMeasure basicNew instVarAt: 1 put: 0; instVarAt: 2 put: (BaseUnit basicNew instVarAt: 1 put: 'joule'; instVarAt: 2 put: 'joules'; instVarAt: 3 put: 'j'; yourself); yourself).
-	destino := CintaA.! !
+	destino := Caja.! !
 
 !ExtractorDeCarbon class methodsFor: 'as yet unclassified' stamp: 'SF 4/20/2021 18:30:27'!
 menasAExtraerSegunEnergiaActual
@@ -218,16 +218,16 @@ sacarEnergia: energiaASacar
 	energiaActual := energiaActual - energiaASacar! !
 
 
-!classDefinition: #ExtractorDeHierro category: 'Factorio-Escenario3'!
+!classDefinition: #ExtractorDeHierro category: 'Factorio'!
 DenotativeObject subclass: #ExtractorDeHierro
 	instanceVariableNames: ''
 	classVariableNames: ''
 	poolDictionaries: ''
-	category: 'Factorio-Escenario3'!
+	category: 'Factorio'!
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
-!classDefinition: 'ExtractorDeHierro class' category: 'Factorio-Escenario3'!
+!classDefinition: 'ExtractorDeHierro class' category: 'Factorio'!
 ExtractorDeHierro class
 	instanceVariableNames: 'energiaActual destino'!
 
@@ -268,7 +268,7 @@ extraer
 	self sacarEnergia: energiaConsumida.
 	^destino agregarMenas: (self conjuntoDeMenasDeHierroCantidad: cantidadDeMenas).! !
 
-!ExtractorDeHierro class methodsFor: 'as yet unclassified' stamp: 'vaciar 5/8/2021 21:09:05'!
+!ExtractorDeHierro class methodsFor: 'as yet unclassified' stamp: 'cc 5/9/2021 17:59:17'!
 initializeCollaboratorsFromFile
 	"Auto generated method for loading purposes - Do not modify it"
 
@@ -288,16 +288,16 @@ sacarEnergia: energiaASacar
 	energiaActual := energiaActual - energiaASacar! !
 
 
-!classDefinition: #PruebasDeExtractorDeCarbon category: 'Factorio-Escenario3'!
+!classDefinition: #PruebasDeExtractorDeCarbon category: 'Factorio'!
 DenotativeObject subclass: #PruebasDeExtractorDeCarbon
 	instanceVariableNames: ''
 	classVariableNames: ''
 	poolDictionaries: ''
-	category: 'Factorio-Escenario3'!
+	category: 'Factorio'!
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
-!classDefinition: 'PruebasDeExtractorDeCarbon class' category: 'Factorio-Escenario3'!
+!classDefinition: 'PruebasDeExtractorDeCarbon class' category: 'Factorio'!
 PruebasDeExtractorDeCarbon class
 	instanceVariableNames: ''!
 
@@ -344,16 +344,16 @@ test05UnExtractorPuedeExtraerMultiplesMenasConMuchaEnergia
 ! !
 
 
-!classDefinition: #PruebasDeFactorio category: 'Factorio-Escenario3'!
+!classDefinition: #PruebasDeFactorio category: 'Factorio'!
 DenotativeObject subclass: #PruebasDeFactorio
 	instanceVariableNames: ''
 	classVariableNames: ''
 	poolDictionaries: ''
-	category: 'Factorio-Escenario3'!
+	category: 'Factorio'!
 
 "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- "!
 
-!classDefinition: 'PruebasDeFactorio class' category: 'Factorio-Escenario3'!
+!classDefinition: 'PruebasDeFactorio class' category: 'Factorio'!
 PruebasDeFactorio class
 	instanceVariableNames: ''!
 
