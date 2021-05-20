@@ -1,6 +1,6 @@
 
 <h1 align="center">Ejercicios - Algoritmos y Programación III</h1>
-<h2 align="center">Curso Leveroni</h2><br>
+<h2 align="center">Curso Leveroni</h2>
 
 
 ## Index 🚀 
@@ -14,7 +14,7 @@
 2) **Codigo Repetido:**
 
     Ejercicio donde se busca quitar el código repetido de un modelo y de sus tests.
-    
+
 ---
 _Agustina Su y Camila Codina_
 
