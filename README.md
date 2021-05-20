@@ -11,7 +11,10 @@
 
     El objetivo es tener un modelo que soporte tres escenarios: Extractor-Caja, Extractor-Cinta-Caja,Extractor-Extractor-Cinta-Cinta-Caja.
 
+2) **Codigo Repetido:**
 
+    Ejercicio donde se busca quitar el código repetido de un modelo y de sus tests.
+    
 ---
 _Agustina Su y Camila Codina_
 
