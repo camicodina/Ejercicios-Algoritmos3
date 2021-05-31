@@ -15,6 +15,11 @@
 
     Ejercicio donde se busca quitar el código repetido de un modelo y de sus tests.
 
+3) **Numeros:**
+
+    Ejercicio donde se busca implementar la suma, la resta, la multiplicación y la división entre números enteros y fraccionarios logrando que la solución final no tenga "if" y todos los test funcionen.
+    Adicionalmente modificamos algunas cosas por el "Desafío Adicional"
+
 ---
 _Agustina Su y Camila Codina_
 
