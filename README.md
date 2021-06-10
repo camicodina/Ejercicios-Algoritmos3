@@ -19,6 +19,10 @@
 
     Ejercicio donde se busca implementar la suma, la resta, la multiplicación y la división entre números enteros y fraccionarios logrando que la solución final no tenga "if" y todos los test funcionen.
     Adicionalmente modificamos algunas cosas por el "Desafío Adicional"
+    
+4) **Stack:**
+
+Ejercicio para seguir practicando polimorfismo implementando un Stack que no debe tener if. También implementamos el mensaje find de SentenceFinderByPrefix que dado un prefijo se encarga de devolver todas las oraciones almacenadas en el Stack que contengan dicho prefijo.
 
 ---
 _Agustina Su y Camila Codina_
