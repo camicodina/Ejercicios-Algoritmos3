@@ -24,6 +24,10 @@ Adicionalmente modificamos algunas cosas por el "Desafío Adicional"
 
 Ejercicio para seguir practicando polimorfismo implementando un Stack que no debe tener if. También implementamos el mensaje find de SentenceFinderByPrefix que dado un prefijo se encarga de devolver todas las oraciones almacenadas en el Stack que contengan dicho prefijo.
 
+5) **Mars Rover:**
+
+Ejercicio para practicar TDD al implementar un Mars Rover que, a partir de un punto para posicionar y un punto cardinal que indica hacia donde apunta, ejecuta un conjunto de comandos empaquetados en un String que permite su movimiento en un plano.
+
 ---
 _Agustina Su y Camila Codina_
 
