@@ -28,6 +28,10 @@ Ejercicio para seguir practicando polimorfismo implementando un Stack que no deb
 
 Ejercicio para practicar TDD al implementar un Mars Rover que, a partir de un punto para posicionar y un punto cardinal que indica hacia donde apunta, ejecuta un conjunto de comandos empaquetados en un String que permite su movimiento en un plano.
 
+6) **Servicios Financieros:**
+
+Implementación de transferencias y portfolios utilizando TDD.
+
 ---
 _Agustina Su y Camila Codina_
 
