@@ -32,6 +32,14 @@ Ejercicio para practicar TDD al implementar un Mars Rover que, a partir de un pu
 
 Implementación de transferencias y portfolios utilizando TDD.
 
+7) **Servicios Financieros 2:**
+
+Ampliamos la funcionalidad de Servicios financieros: ahora podemos brindar reportes para las cuentas y portfolios de clientes.
+
+8) **Mars Rover - El Regreso:**
+
+Implementación de Logs y Windows.
+
 ---
 _Agustina Su y Camila Codina_
 
